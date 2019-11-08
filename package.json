@@ -1,0 +1,14 @@
+{
+  "name": "getfilelist",
+  "version": "1.0.0",
+  "description": "GetFileList",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'test';"
+  },
+  "author": "JeongSu",
+  "license": "ISC",
+  "dependencies": {
+    "excel4node": "^1.7.2"
+  }
+}
