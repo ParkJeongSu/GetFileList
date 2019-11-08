@@ -11,15 +11,16 @@ var notIncludeExtension =['.class','.Designe','.designer','.csproj','.dll','.jar
 
 var wb = new xl.Workbook();
 var ws = wb.addWorksheet('FileList');
-ws.cell(1, 1).string('fullpath').style(style);
-ws.cell(1, 2).string('fileName').style(style);
 
 var style = wb.createStyle({
     font: {
         color: '#000000',
         size: 12,
-    }
+    },
 });
+
+ws.cell(1, 1).string("fullpath").style(style);
+ws.cell(1, 2).string("fileName").style(style);
 
 
 function writeExcel(fullpath,fileName, i) {
